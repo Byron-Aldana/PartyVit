@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyRaidoButtonTwo" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlNormal">#ffffff</item>
+        <item name="android:colorControlActivated">#ffffff</item>
+        <item name="android:colorControlHighlight">#ffffff</item>
+        <item name="android:textColorPrimaryDisableOnly">#ffffff</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+</resources>

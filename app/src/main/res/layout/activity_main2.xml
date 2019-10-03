@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".Main2Activity">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="325dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="248dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_op1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:paddingLeft="15dp"
+            android:theme="@style/MyRaidoButtonTwo"
+            android:text="Ya comenzaste hacer planes de la fiesta a la que irás."
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rb_op2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyRaidoButtonTwo"
+            android:checked="false"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:text="No puedes espera a llegar a  tu casa y dormir un poco."
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/uno" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="202dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="108dp"
+        android:text="Se acerca el fin de semana y tú..."
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="335dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/boton_redondo"
+        android:onClick="Siguiente"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Siguiente"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="24dp"
+        android:text="Si bebes no manejes ¡Pide Vit!"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button" />
+
+</android.support.constraint.ConstraintLayout>

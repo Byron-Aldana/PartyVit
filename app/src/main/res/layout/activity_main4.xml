@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".Main4Activity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/tres" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="320dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/boton_redondo"
+        android:onClick="Siguiente"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Siguiente"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="303dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="248dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_opti1"
+            android:layout_width="315dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:theme="@style/MyRaidoButtonTwo"
+            android:paddingLeft="15dp"
+            android:text="Prefieres no ir, no sabes quienes estaran alli o donde será."
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rb_opti2"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:theme="@style/MyRaidoButtonTwo"
+            android:paddingLeft="15dp"
+            android:text="Te arreglas de inmediato, ni siquiera preguntas en donde será."
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="25dp"
+        android:text="Si bebes no manejes ¡Pide Vit!"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="207dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:text="Cuando te invitan a una fiesta tú..."
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

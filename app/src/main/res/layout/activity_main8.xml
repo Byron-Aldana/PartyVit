@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".Main8Activity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="352dp"
+        android:layout_height="211dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/el_alma_de_la_fiesta" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="94dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:text="Resultado:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:text="Es por eso que Vit te premia con un código de descuento para que sigas disfrutando de las fiestas."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="341dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="12dp"
+        android:text="La fiesta no comienza hasta que tu llegas, te la pasas hablando con todos y conociendo a gente nueva."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="170dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:text="CÓDIGO:FIESTAVIT"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/boton_redondo"
+        android:onClick="salir"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Salir"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="250dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="15dp"
+        android:text="Si bebes no manejes ¡Pide Vit!"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button" />
+</android.support.constraint.ConstraintLayout>

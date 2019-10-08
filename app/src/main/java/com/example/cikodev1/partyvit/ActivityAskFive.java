@@ -7,34 +7,38 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-public class Main5Activity extends AppCompatActivity {
+public class ActivityAskFive extends AppCompatActivity {
 
     private RadioButton rb_option1, rb_option2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main5);
+        setContentView(R.layout.activity_ask_five);
         getSupportActionBar().hide();
 
-        rb_option1 = (RadioButton)findViewById(R.id.rb_optio1);
-        rb_option2 = (RadioButton)findViewById(R.id.rb_optio2);
+        rb_option1 = (RadioButton)findViewById(R.id.rb_option1);
+        rb_option2 = (RadioButton)findViewById(R.id.rb_option2);
     }
-    public void Siguiente (View view){
+    public void Result (View view){
         if (rb_option1.isChecked() || rb_option2.isChecked()){
-            int result = 0;
-            int res = getIntent().getIntExtra("dato3", 0);
+            int option = 0;
+            int result = getIntent().getIntExtra("data4", 0);
             if (rb_option1.isChecked()){
-                result = 1;
+                option = 1;
             }else if (rb_option2.isChecked()){
-                result = -1;
+                option = -1;
             }
-            result = res + result;
-            Intent i = new Intent(this, Main6Activity.class);
-            i.putExtra("dato4", result);
-            startActivity(i);
+            option = result + option;
+            if (option >2){
+                Intent i = new Intent(this, ActivityBoringResult.class);
+                startActivity(i);
+            }else{
+                Intent i = new Intent(this, ActivityPartyResult.class);
+                startActivity(i);
+
+            }
         } else {
             Toast.makeText(this,"Debes marcar una respuesta",Toast.LENGTH_SHORT).show();
-
         }
     }
 }

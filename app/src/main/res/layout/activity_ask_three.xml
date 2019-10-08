@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/background"
-    tools:context=".Main4Activity">
+    tools:context=".ActivityAskThree">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -24,10 +24,10 @@
         android:layout_height="49dp"
         android:layout_marginTop="84dp"
         android:background="@drawable/boton_redondo"
-        android:onClick="Siguiente"
+        android:onClick="Next"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:text="Siguiente"
+        android:text="@string/next_Button"
         android:textAllCaps="false"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,29 +45,29 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/rb_opti1"
+            android:id="@+id/option_one_readio_button"
             android:layout_width="315dp"
             android:layout_height="72dp"
             android:layout_weight="1"
             android:checked="false"
-            android:theme="@style/MyRaidoButtonTwo"
             android:paddingLeft="15dp"
-            android:text="Prefieres no ir, no sabes quienes estaran alli o donde será."
+            android:text="@string/option1_ask_three_RadioButton"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:theme="@style/MyRaidoButtonTwo" />
 
         <RadioButton
-            android:id="@+id/rb_opti2"
+            android:id="@+id/option_two_readio_button"
             android:layout_width="match_parent"
             android:layout_height="79dp"
             android:layout_weight="1"
             android:checked="false"
-            android:theme="@style/MyRaidoButtonTwo"
             android:paddingLeft="15dp"
-            android:text="Te arreglas de inmediato, ni siquiera preguntas en donde será."
+            android:text="@string/option2_ask_three_RadioButton"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:theme="@style/MyRaidoButtonTwo" />
 
     </RadioGroup>
 
@@ -78,7 +78,7 @@
         android:layout_marginLeft="98dp"
         android:layout_marginStart="95dp"
         android:layout_marginTop="25dp"
-        android:text="Si bebes no manejes ¡Pide Vit!"
+        android:text="@string/warning_TexView"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +93,7 @@
         android:layout_marginRight="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="92dp"
-        android:text="Cuando te invitan a una fiesta tú..."
+        android:text="@string/thir_question_TexView"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

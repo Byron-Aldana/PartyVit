@@ -8,8 +8,10 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class ActivityAskOne extends AppCompatActivity {
+    public static final String EXTRA_DATA = "Data";
 
     private RadioButton option1RadioButton,option2RadioButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,10 +31,10 @@ public class ActivityAskOne extends AppCompatActivity {
                 option = 1;
             }
             Intent i = new Intent(this, ActivityAskTwo.class);
-            i.putExtra("data", option );
+            i.putExtra(EXTRA_DATA, option );
             startActivity(i);
         } else {
-            Toast.makeText(this,"Debes marcar una respuesta",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getResources().getString(R.string.message),Toast.LENGTH_SHORT).show();
 
         }
     }

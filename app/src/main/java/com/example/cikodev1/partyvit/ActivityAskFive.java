@@ -8,24 +8,23 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class ActivityAskFive extends AppCompatActivity {
-
-    private RadioButton rb_option1, rb_option2;
+    private RadioButton option1RadioButton, option2RadioButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ask_five);
         getSupportActionBar().hide();
 
-        rb_option1 = (RadioButton)findViewById(R.id.rb_option1);
-        rb_option2 = (RadioButton)findViewById(R.id.rb_option2);
+        option1RadioButton = (RadioButton)findViewById(R.id.option_one_readio_button);
+        option2RadioButton = (RadioButton)findViewById(R.id.option_two_readio_button);
     }
     public void Result (View view){
-        if (rb_option1.isChecked() || rb_option2.isChecked()){
+        if (option1RadioButton.isChecked() || option2RadioButton.isChecked()){
             int option = 0;
-            int result = getIntent().getIntExtra("data4", 0);
-            if (rb_option1.isChecked()){
+            int result = getIntent().getIntExtra( ActivityAskFourth.EXTRA_DATA, 0);
+            if (option1RadioButton.isChecked()){
                 option = 1;
-            }else if (rb_option2.isChecked()){
+            }else if (option2RadioButton.isChecked()){
                 option = -1;
             }
             option = result + option;
@@ -38,7 +37,7 @@ public class ActivityAskFive extends AppCompatActivity {
 
             }
         } else {
-            Toast.makeText(this,"Debes marcar una respuesta",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getResources().getString(R.string.message),Toast.LENGTH_SHORT).show();
         }
     }
 }

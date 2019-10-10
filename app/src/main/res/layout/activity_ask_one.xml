@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/background"
-    tools:context=".Main2Activity">
+    tools:context=".ActivityAskOne">
 
 
     <RadioGroup
@@ -19,28 +19,28 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/rb_op1"
+            android:id="@+id/option_one_radio_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:paddingLeft="15dp"
-            android:theme="@style/MyRaidoButtonTwo"
-            android:text="Ya comenzaste hacer planes de la fiesta a la que irás."
+            android:text="@string/option1_ask_one_radio_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:theme="@style/MyRaidoButtonTwo" />
 
         <RadioButton
-            android:id="@+id/rb_op2"
+            android:id="@+id/option_two_radio_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:theme="@style/MyRaidoButtonTwo"
-            android:checked="false"
             android:layout_weight="1"
+            android:checked="false"
             android:paddingLeft="15dp"
-            android:text="No puedes espera a llegar a  tu casa y dormir un poco."
+            android:text="@string/option2_ask_one_radio_button"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:theme="@style/MyRaidoButtonTwo" />
     </RadioGroup>
 
     <ImageView
@@ -57,9 +57,9 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="202dp"
-        android:layout_height="67dp"
+        android:layout_height="76dp"
         android:layout_marginTop="108dp"
-        android:text="Se acerca el fin de semana y tú..."
+        android:text="@string/first_question_text_view"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -71,10 +71,10 @@
         android:layout_height="49dp"
         android:layout_marginTop="84dp"
         android:background="@drawable/boton_redondo"
-        android:onClick="Siguiente"
+        android:onClick="Next"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:text="Siguiente"
+        android:text="@string/next_button"
         android:textAllCaps="false"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +89,7 @@
         android:layout_marginLeft="104dp"
         android:layout_marginStart="104dp"
         android:layout_marginTop="24dp"
-        android:text="Si bebes no manejes ¡Pide Vit!"
+        android:text="@string/warning_text_view"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"

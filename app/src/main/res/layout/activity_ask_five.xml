@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/background"
-    tools:context=".Main5Activity">
+    tools:context=".ActivityAskFive">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/cuatro" />
+        app:srcCompat="@mipmap/cinco" />
 
     <Button
         android:id="@+id/Button"
@@ -24,10 +24,10 @@
         android:layout_height="49dp"
         android:layout_marginTop="84dp"
         android:background="@drawable/boton_redondo"
-        android:onClick="Siguiente"
+        android:onClick="Result"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:text="Siguiente"
+        android:text="@string/result_button"
         android:textAllCaps="false"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
 
     <RadioGroup
         android:id="@+id/radioGroup2"
-        android:layout_width="303dp"
+        android:layout_width="321dp"
         android:layout_height="197dp"
         android:layout_marginTop="248dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,29 +45,29 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/rb_optio1"
-            android:layout_width="315dp"
+            android:id="@+id/option_one_radio_button"
+            android:layout_width="match_parent"
             android:layout_height="72dp"
             android:layout_weight="1"
-            android:paddingLeft="15dp"
             android:checked="false"
-            android:theme="@style/MyRaidoButtonTwo"
-            android:text="Al cine."
+            android:paddingLeft="15dp"
+            android:text="@string/option1_ask_five_radio_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:theme="@style/MyRaidoButtonTwo" />
 
         <RadioButton
-            android:id="@+id/rb_optio2"
+            android:id="@+id/option_two_readio_button"
             android:layout_width="match_parent"
             android:layout_height="79dp"
             android:layout_weight="1"
             android:checked="false"
-            android:theme="@style/MyRaidoButtonTwo"
             android:paddingLeft="15dp"
-            android:text="A un concierto."
+            android:text="@string/option2_ask_five_radio_button"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:theme="@style/MyRaidoButtonTwo" />
 
     </RadioGroup>
 
@@ -78,7 +78,7 @@
         android:layout_marginLeft="98dp"
         android:layout_marginStart="95dp"
         android:layout_marginTop="25dp"
-        android:text="Si bebes no manejes ¡Pide Vit!"
+        android:text="@string/warning_text_view"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,17 +86,18 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="225dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="182dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="48dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="48dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="76dp"
-        android:text="¿A dónde prefieres ir un viernes en la noche?"
+        android:layout_marginTop="72dp"
+        android:text="@string/five_question_text_view"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

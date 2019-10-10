@@ -26,8 +26,8 @@ public class ActivityUser extends AppCompatActivity {
         setContentView(R.layout.activity_user);
         getSupportActionBar().hide();
 
-        nameEditText = (EditText)findViewById(R.id.nameEditText);
-        mailEditText = (EditText)findViewById(R.id.mailEditText);
+        nameEditText = (EditText)findViewById(R.id.name_edit_text);
+        mailEditText = (EditText)findViewById(R.id.mail_edit_text);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE);
         }

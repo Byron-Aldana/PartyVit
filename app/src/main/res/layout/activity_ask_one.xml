@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/option_one_readio_button"
+            android:id="@+id/option_one_radio_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
@@ -31,7 +31,7 @@
             android:theme="@style/MyRaidoButtonTwo" />
 
         <RadioButton
-            android:id="@+id/option_two_readio_button"
+            android:id="@+id/option_two_radio_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

@@ -16,8 +16,8 @@ public class ActivityAskThree extends AppCompatActivity {
         setContentView(R.layout.activity_ask_three);
         getSupportActionBar().hide();
 
-        option1RadioButton = (RadioButton)findViewById(R.id.option_one_readio_button);
-        option2RadioButton = (RadioButton)findViewById(R.id.option_two_readio_button);
+        option1RadioButton = (RadioButton)findViewById(R.id.option_one_radio_button);
+        option2RadioButton = (RadioButton)findViewById(R.id.option_two_radio_button);
     }
     public void Next (View view){
         if (option1RadioButton.isChecked() || option2RadioButton.isChecked()){
